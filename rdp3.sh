@@ -18,6 +18,8 @@ sudo apt install firefox -y
 sudo apt install falkon -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
+wget https://github.com/SaladTechnologies/salad-applications/releases/download/0.5.1/Salad-0.5.1_amd64.deb
+sudo dpkg --install Salad-0.5.1_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo adduser SAI1919 chrome-remote-desktop
 } &> /dev/null &&
