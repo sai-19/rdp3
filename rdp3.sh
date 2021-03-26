@@ -8,6 +8,8 @@ echo 'SAI1919:1234' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+wget http://ftp.us.debian.org/debian/pool/non-free/r/rar/rar_5.4.0+dfsg.1-0.1_amd64.deb
+sudo dpkg --install rar_5.4.0+dfsg.1-0.1_amd64.deb
 sudo dpkg --install chrome-remote-desktop_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo DEBIAN_FRONTEND=noninteractive \
