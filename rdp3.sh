@@ -3,7 +3,7 @@ printf ' edited by sai \n'
 printf "RDP installing... " >&2
 {
 sudo useradd -m SAI1919
-sudo adduser SAI1919SAI1919 sudo
+sudo adduser SAI1919 sudo
 echo 'SAI1919:1234' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
